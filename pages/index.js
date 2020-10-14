@@ -1,11 +1,19 @@
-import sass from "../styles/style.scss"
+import Card from "../components/Card"
 
 function HomePage() {
   return (
-    <div>
-      <h1 className={sass.title}>I am not red!</h1>
-    </div>
-  )
-}
+  <div>
+    <h1>Examples</h1>
+    <Card 
+    title="Lorem ipsum"
+    excerpt="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+    />
+    <Card 
+    title="Lorem ipsum"
+    excerpt="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
+    />
+  </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
